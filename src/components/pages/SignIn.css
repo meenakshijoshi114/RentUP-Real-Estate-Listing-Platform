@@ -1,0 +1,91 @@
+.signin-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1d2636, #27ae60);
+  padding: 20px;
+}
+
+.signin-card {
+  width: 400px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(14px);
+  border-radius: 16px;
+  padding: 40px 35px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+  animation: fadeIn 0.6s ease;
+  color: #fff;
+}
+
+.signin-card h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.signin-card input {
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.18);
+  color: #fff;
+  font-size: 15px;
+}
+
+.signin-card input::placeholder {
+  color: #e7e7e7;
+}
+
+.signin-btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+  border: none;
+  background: #27ae60;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.signin-btn:hover {
+  background: #1d2636;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 18px;
+  font-size: 14px;
+}
+
+.signup-link a {
+  color: #00f0ff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.signup-link a:hover {
+  color: #ffffff;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 480px) {
+  .signin-card {
+    width: 100%;
+    padding: 30px 20px;
+  }
+}

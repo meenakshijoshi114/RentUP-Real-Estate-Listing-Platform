@@ -1,0 +1,104 @@
+header {
+  width: 100%;
+  background: #fff;
+  padding: 8px 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
+.container {
+  width: 85%;
+  margin: auto;
+}
+
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 130px;
+}
+
+.nav ul.flex {
+  display: flex;
+  gap: 25px;
+}
+
+.nav ul li a {
+  color: #2d3954;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav ul li a:hover {
+  color: #27ae60;
+}
+
+.right-items {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.mylist {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 16px;
+}
+
+.mylist span {
+  padding: 3px 8px;
+  border-radius: 50px;
+  background: #27ae60;
+  color: #fff;
+  font-size: 12px;
+}
+
+.signin-btn,
+.signup-btn {
+  background: #27ae60;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: 0.3s ease;
+}
+
+.signin-btn:hover,
+.signup-btn:hover {
+  background: #1e8a4e;
+  transform: translateY(-2px);
+}
+
+@media screen and (max-width: 768px) {
+  .nav ul.flex {
+    display: none;
+  }
+
+  .small {
+    display: block;
+    background: #27ae60;
+    padding: 20px;
+    position: absolute;
+    top: 8vh;
+    width: 100%;
+  }
+
+  .small li a {
+    display: block;
+    color: #fff;
+    margin: 10px 0;
+  }
+}

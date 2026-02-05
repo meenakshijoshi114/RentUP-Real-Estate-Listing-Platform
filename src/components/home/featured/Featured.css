@@ -1,0 +1,52 @@
+.featured .box {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  border-radius: 18px;
+  text-align: center;
+  padding: 35px 25px;
+  cursor: pointer;
+  background: #ffffff;
+  transition: 0.35s ease;
+  transform: translateY(0);
+}
+
+.featured .box:hover {
+  transform: translateY(-12px) scale(1.03);
+  box-shadow: 0 22px 40px rgba(0, 0, 0, 0.15);
+  background: #f8faff;
+}
+
+.featured img {
+  width: 65px;
+  height: 65px;
+  margin: auto;
+  transition: 0.35s ease;
+}
+
+.featured .box:hover img {
+  transform: scale(1.18);
+  filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.1));
+}
+
+.featured .box h4 {
+  margin-top: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #2d3954;
+  transition: 0.3s;
+}
+
+.featured .box:hover h4 {
+  color: #27ae60;
+}
+
+.featured .box label {
+  display: block;
+  margin-top: 5px;
+  font-size: 15px;
+  color: #72809d;
+  transition: 0.3s;
+}
+
+.featured .box:hover label {
+  color: #27ae60;
+}
